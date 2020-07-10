@@ -4,10 +4,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/lux/bootstrap.min.css" integrity="sha384-smnSwzHqW1zKbeuSMsAM/fMQpkk7HY11LuHiwT8snL/W2QBoZtVCT4H5x1CEcJCs" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0ce3de349f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Document</title>
 </head>
-<body>
-    <h1>Hello World</h1>
+<body class="light">
+
+    <!--first navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand mr-5" href="#">The Weather Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+            
+          <ul class="navbar-nav  justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fas fa-globe-americas fa-2x"></i> 78 &deg;</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+      </nav>
+<!--end of first navbar-->
+<!--start of second navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark px-3" id="secondBar">
+        <a class="navbar-brand px-4" href="#" id="cityNav"><span>78 &deg;</span> Bowie, MD</a>
+        
+      </nav>
+      <!--end of second navbar-->
+      <!--nav tabs-->
+      <ul class="nav nav-tabs d-flex justify-content-between">
+        
+        <li class="nav-item">
+          <a class="nav-link"  href="#"></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">Today's Weather</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#profile">10 Day Forecast</a>
+          </li>
+        <li class="nav-item disabled">
+            <a class="nav-link "  href="#"></a>
+          </li>
+
+      </ul>
+      <!--end of tabs-->
+    <!--start of content-->
+      <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade show active" id="home">
+
+<div class="container">
+  <div class="row">
+    <div class="col-8 col-md-8 col-sm-12">
+      <div class="card mt-3 mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+         
+          <div class="col-md-9">
+            <div class="card-body">
+              <h5 class="card-title">Bowie, Md 
+              <small class="text-muted">as of 2:57 p.m</small></h5>
+              <h1 style="font-size: 6em;font-weight:900 !important;">89 &deg;</h1>
+              <h3><small>Partly Cloudy</small></h3>
+              <h5 class="text-muted">15% chance of rain through 2pm</h5>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex flex-column justify-content-center align-items-center pr-3">
+            <div class="container d-flex flex-column justify-content-center align-items-center m-auto p-3">
+              <i class="fas fa-cloud-sun fa-5x"></i>
+            <h3 class="mt-4">89/72</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mt-5 mb-3" style="max-width: 540px;" id="completeDay">
+        <div class="row no-gutters">
+          <div class="col-3 border-right-primary p-1 text-center d-flex flex-column">
+            <p class="font-weight-bold">Morning</p>
+            <p class="font-weight-bold">78 &deg;</p>
+            <p><i class="fas fa-tint mt-2"></i> 15%</p>
+          </div>
+          <div class="col-3 border-right-primary p-1 text-center  d-flex flex-column">
+            <p class="font-weight-bold">Afternoon</p>
+            <p class="font-weight-bold">78 &deg;</p>
+            <p ><i class="fas fa-tint mt-2"></i> 5%</p>
+          </div>
+             <div class="col-3 border-right-primary p-1 text-center  d-flex flex-column">
+            <p class="font-weight-bold">Evening</p>
+            <p class="font-weight-bold">78 &deg;</p>
+            <p ><i class="fas fa-tint mt-2"></i> 10%</p>
+ </div>
+            
+          <div class="col-3 border-right-primary p-1 text-center  d-flex flex-column">
+            <p class="font-weight-bold">Overnight</p>
+            <p class="font-weight-bold">78 &deg;</p>
+            <p ><i class="fas fa-tint mt-2"></i> 20%</p>
+          </div>
+            
+        </div>
+      </div>
+
+      <div class="card mt-5 mb-3" style="max-width: 540px;">
+       <div class="row d-flex">
+       <div class="col-6 justify-content-center align-items-center text-center p-3"><h4>90&deg;</h4></div>
+       <div class="col-6 justify-content-center align-items-center text-center p-3"> <h4>90 &deg; / 75 &deg;</h4></div>
+       </div>
+       <div class="row">
+         <div class="col-6">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-6">High / Low</div>
+                <div class="col-6">--/71&deg;</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-6">Wind</div>
+                <div class="col-6">3 mph</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-6">Humidity</div>
+                <div class="col-6">68%</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-6">Dew Point</div>
+                <div class="col-6">72&deg;</div>
+              </div>
+            </li>
+            
+          </ul>
+         </div>
+         <div class="col-6">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-6">UV Index</div>
+                <div class="col-6">0 of 10</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-6">Visibility</div>
+                <div class="col-6">10 mi</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-6"> Phase</div>
+                <div class="col-6">Full Moon</div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-6">Pressure</div>
+                <div class="col-6">29.94 in</div>
+              </div>
+            </li>
+          </ul>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="col-4 col-md-4 col-sm-12 mt-5">
+      <div class="card-container">
+        <div class="search-card">
+          <div class="face face1">
+            <div class="content">
+  <img src="./img/search.png" alt="">
+  <h3>Search By City</h3>
+            </div>
+          </div>
+          <div class="face face2">
+            <div class="content">
+              <form class="form-inline  w-50">
+                
+                <input class="form-control mr-sm-2" type="text" placeholder="Enter City Here" aria-label="Search">
+                <button type="button" class="btn btn-light mt-1" style="border-radius: 10px">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      
+    </div>
+  </div>
+</div>
+
+
+
+          </div>
+        <div class="tab-pane fade" id="profile">
+          <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit.</p>
+        </div>
+      </div>
+
+      
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
